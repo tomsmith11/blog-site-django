@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block title %}Home - ShopStore{% endblock %}
+{% block content %}
+
+<section class="hero">
+    <h1>Welcome to ShopStore</h1>
+    <p>Discover amazing products at great prices</p>
+    <a href="{% url 'products' %}" class="cta-button">Shop Now</a>
+</section>
+<section class="products" id="products">
+  <h2>Contact us</h2>
+      <p>
+        If you have any questions or need assistance, please feel free to reach out to us. Our customer service team is here to help you. 
+        <br />
+        You can contact us via phone or email:
+        <br />
+        <br />
+        Phone: +44 7504 216862
+        <br />
+        Email: b615263@leedscitycollege.ac.uk
+        <br />
+        <br />
+        We aim to respond to all inquiries within 24 hours. Thank you for choosing ShopStore!
+      </p>
+{% endblock %}

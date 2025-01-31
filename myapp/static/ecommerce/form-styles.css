@@ -1,0 +1,70 @@
+.container {
+  margin-top: 80px;
+  background-color: #ffffff;
+  height: 50px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  max-width: 400px;
+}
+
+.registration-form {
+  background-color: #f9f9f9;
+  border: 2px solid #e0e0e0;
+  padding: 30px;
+}
+
+.registration-form h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+  font-size: 24px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  align-self: flex-start;
+  margin-bottom: 8px;
+  color: #555;
+  font-weight: bold;
+}
+
+input,
+button {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+}
+
+input {
+  border: 1px solid #ddd;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus {
+  outline: none;
+  border-color: #4a90e2;
+  box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.2);
+}
+
+button {
+  background-color: #4a90e2;
+  color: #fff;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+button:hover {
+  background-color: #3a7bc8;
+}
+
+.container {
+  animation: fadeIn 0.5s ease-out;
+}

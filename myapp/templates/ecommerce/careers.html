@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block title %}Home - ShopStore{% endblock %}
+{% block content %}
+
+<section class="hero">
+    <h1>Welcome to ShopStore</h1>
+    <p>Discover amazing products at great prices</p>
+    <a href="{% url 'products' %}" class="cta-button">Shop Now</a>
+</section>
+<section class="products" id="products">
+  <h2>Careers</h2>
+  <p>
+    At ShopStore, we believe that our employees are our greatest asset. We are
+    committed to creating a dynamic and inclusive workplace where everyone can
+    thrive. Our team is made up of passionate and talented individuals who are
+    dedicated to delivering the best shopping experience to our customers. We
+    offer a range of career opportunities across various departments, including
+    marketing, customer service, logistics, and technology. If you are looking
+    for a challenging and rewarding career in a fast-paced environment, we
+    would love to hear from you. Join us and be a part of a company that values
+    innovation, collaboration, and growth.
+  </p>
+{% endblock %}

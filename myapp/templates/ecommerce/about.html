@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block title %}Home - ShopStore{% endblock %}
+{% block content %}
+
+<section class="hero">
+    <h1>Welcome to ShopStore</h1>
+    <p>Discover amazing products at great prices</p>
+    <a href="{% url 'products' %}" class="cta-button">Shop Now</a>
+</section>
+<section class="products" id="products">
+  <h2>About</h2>
+      <p>
+        ShopStore was founded with the mission to provide high-quality products at affordable prices. Our journey began in 2010, and since then, we have grown into a trusted name in the ecommerce industry. We are passionate about offering a wide range of products that cater to the diverse needs of our customers.
+
+        Our team is dedicated to ensuring a seamless shopping experience, from browsing our website to receiving your order. We believe in the power of innovation and continuously strive to improve our services and product offerings.
+
+        At ShopStore, customer satisfaction is our top priority. We are committed to providing excellent customer service and are always here to help with any questions or concerns you may have. Thank you for choosing ShopStore, and we look forward to serving you.
+      </p>
+{% endblock %}

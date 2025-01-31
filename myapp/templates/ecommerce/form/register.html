@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+{% extends "base.html" %}
+
+{% block title %}Home - ShopStore{% endblock %}
+{% block content %}
+
+<section class="products" id="products">
+  <div class="container>">
+  <div class="container">
+
+      <a href="{% url 'home' %}"><h3>Return to home</h3></a>
+      <form
+        class="registration-form"
+        method="POST"
+        action="{% url 'register' %}"
+      >
+        {% csrf_token %}
+        <h2>Registration</h2>
+        <div class="form-group">
+          <label for="first_name">First Name</label>
+          <input type="text" id="first_name" name="first_name" required />
+        </div>
+        <div class="form-group">
+          <label for="last_name">Last Name</label>
+          <input type="text" id="last_name" name="last_name" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" required />
+        </div>
+        <button type="submit">Register</button>
+        <div style="text-align: center; margin-top: 20px">
+          <a
+            href="{% url 'login' %}"
+            style="color: #4a90e2; text-decoration: none"
+            >Already have an account? Login</a
+          >
+        </div>
+      </form>
+    </div>
+  </div>
+  </body>
+{% endblock %}

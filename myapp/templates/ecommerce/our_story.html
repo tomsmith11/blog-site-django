@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block title %}Home - ShopStore{% endblock %}
+{% block content %}
+
+<section class="hero">
+    <h1>Welcome to ShopStore</h1>
+    <p>Discover amazing products at great prices</p>
+    <a href="{% url 'products' %}" class="cta-button">Shop Now</a>
+</section>
+<section class="products" id="products">
+  <h1>Our Story</h1>
+    <br />
+    <p>
+      Our journey began with a simple idea: to create a place where people could
+      find unique and high-quality products at affordable prices. Founded in
+      2020, ShopStore started as a small online shop with a handful of products.
+      Over the years, we have grown into a thriving e-commerce platform,
+      offering a wide range of items from fashion to electronics. Our commitment
+      to customer satisfaction and our passion for discovering new and exciting
+      products have been the driving forces behind our success. We believe in
+      the power of community and strive to build lasting relationships with our
+      customers. Thank you for being a part of our story.
+    </p>
+{% endblock %}

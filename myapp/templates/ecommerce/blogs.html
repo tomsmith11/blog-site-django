@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %}Blogs - Blogse{% endblock %}
+{% block content %}
+<h2>All Blogs</h2>
+<ul>
+    {% for blog in blogs %}
+    <li>
+        <h3>{{ blog.title }}</h3>
+        <p>{{ blog.content }}</p>
+        <p>By {{ blog.author.first_name }} {{ blog.author.last_name }} on {{ blog.date_created }}</p>
+    </li>
+    {% empty %}
+    <li>No blogs available.</li>
+    {% endfor %}
+</ul>
+{% endblock %}

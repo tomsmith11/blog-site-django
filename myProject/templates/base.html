@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>{% block title %}ShopStore{% endblock %}</title>
+    <title>{% block title %}Blogs{% endblock %}</title>
     <link rel="stylesheet" href="{% static 'ecommerce/styles.css' %}" />
     <link rel="stylesheet" href="{% static 'ecommerce/form-styles.css' %}" />
   </head>
@@ -10,16 +10,15 @@
     <header>
       <nav>
         <div class="logo">
-          <a href="{% url 'home' %}">ShopStore</a>
+          <a href="{% url 'home' %}">Blog</a>
         </div>
 
         <div class="nav-links">
           <a href="{% url 'home' %}">Home</a>
-          <a href="{% url 'products' %}">Products</a>
-          <a href="{% url 'about' %}">About</a>
-          <a href="{% url 'contact' %}">Contact</a>
+          <a href="{% url 'blogs' %}">Blogs</a>
           {% if user.is_authenticated %}
           <a href="{% url 'logout' %}" class="cta-button">Logout</a>
+          <a href="{% url 'create_blog' %}" class="cta-button">Create Blog</a>
           {% else %}
           <a href="{% url 'login' %}" class="cta-button">Login</a>
           {% endif %}
@@ -33,20 +32,12 @@
       <div class="footer-content">
         <div class="footer-section">
           <h3>About Us</h3>
-          <ul>
-            <li><a href="{% url 'our_story' %}">Our Story</a></li>
-            <li><a href="{% url 'careers' %}">Careers</a></li>
-            <li><a href="{% url 'press' %}">Press</a></li>
-          </ul>
+          <ul></ul>
         </div>
 
         <div class="footer-section">
           <h3>Customer Service</h3>
-          <ul>
-            <li><a href="{% url 'contact' %}">Contact Us</a></li>
-            <li><a href="{% url 'shipping' %}">Shipping Info</a></li>
-            <li><a href="{% url 'returns' %}">Returns</a></li>
-          </ul>
+          <ul></ul>
         </div>
 
         <div class="footer-section">

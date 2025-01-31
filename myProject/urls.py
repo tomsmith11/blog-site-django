@@ -26,12 +26,7 @@ urlpatterns = [
     path('logout/', views.logout_view, name='logout'),
     path('', views.index, name='index'),
     path('home/', views.home, name='home'),
-    path('products/', views.products, name='products'),
-    path('about/', views.about, name='about'),
-    path('contact/', views.contact, name='contact'),
-    path('our_story/', views.our_story, name='our_story'),
-    path('careers/', views.careers, name='careers'),
-    path('returns/', views.returns, name='returns'),
-    path('press', views.press, name='press'),
-    path('shipping/', views.shipping, name='shipping'),
+    path('blogs/', views.blogs, name='blogs'),
+    path('create_blog/', views.create_blog, name='create_blog'),
 ]
+
